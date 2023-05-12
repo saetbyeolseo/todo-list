@@ -5,11 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo-list</title>
-    <script type="module" src="./src/index.js"></script>
   </head>
   <body>
-    <section>
-      <h1>test!</h1>
+    <section class="todo-app">
+      <input type="text" placeholder="할일을 등록해주세요." />
+      <ul class="todo-list">
+        <li class="todo-list__item">
+          <label class="completed">test</label>
+          <button>삭제</button>
+        </li>
+        <li class="todo-list__item">
+          <label>test</label>
+          <button>삭제</button>
+        </li>
+      </ul>
+      <section class="footer">
+        <span class="todo-count">2개 남음</span>
+        <ul class="filters">
+          <li>
+            <a href="#/" class="selected">전체</a>
+          </li>
+          <li>
+            <a href="#/active">할일</a>
+          </li>
+          <li>
+            <a href="#/completed">완료</a>
+          </li>
+        </ul>
+        <button class="clear-completed">완료삭제</button>
+      </section>
     </section>
   </body>
 </html>
