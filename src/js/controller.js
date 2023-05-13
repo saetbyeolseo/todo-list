@@ -106,6 +106,7 @@ const bindEvent = () => {
     if (e.target.classList.contains('todo-list__item')) {
       e.target.classList.remove('dragOver');
       clearTimeout(timer);
+      update();
     }
   });
 
