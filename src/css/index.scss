@@ -3,10 +3,12 @@ ul {
   padding-left: 0px;
   margin: 0;
 }
+
 a {
   color: inherit;
   text-decoration: inherit;
 }
+
 .todo-app {
   position: relative;
   box-sizing: border-box;
@@ -16,6 +18,7 @@ a {
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+
   &::before {
     content: 'TODO-LIST';
     position: absolute;
@@ -26,6 +29,7 @@ a {
     color: #f09311;
   }
 }
+
 input[type='text'] {
   width: 100%;
   padding: 1rem;
@@ -33,10 +37,12 @@ input[type='text'] {
   border: 1px solid #e1e1e1;
   font-size: 2rem;
   border-radius: 0.2rem;
+
   &:focus {
     outline: dashed #884e25;
   }
 }
+
 button,
 a {
   background: #fff;
@@ -47,15 +53,18 @@ a {
   cursor: pointer;
   padding: 0.5rem;
 }
+
 .todo-list {
   &__item {
     border-bottom: 1px solid #d1d1d1;
     padding: 1rem;
     display: flex;
     align-items: center;
+
     label {
       flex-grow: 1;
       font-size: 1.2rem;
+
       &.completed {
         text-decoration: line-through;
         color: #d1d1d1;
@@ -63,11 +72,13 @@ a {
     }
   }
 }
+
 .footer {
   padding: 1rem;
   display: flex;
   align-items: center;
 }
+
 .filters {
   display: inline-flex;
   flex-wrap: wrap;
@@ -75,15 +86,18 @@ a {
   flex-grow: 1;
   justify-content: center;
 }
+
 .selected {
   color: #24c497;
   font-weight: 700;
 }
+
 @media only screen and (max-width: 600px) {
   .todo-app {
     width: calc(100% - 1rem);
     margin-top: 5rem;
   }
+
   input[type='text'] {
     font-size: 1.2rem;
   }

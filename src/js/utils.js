@@ -16,7 +16,7 @@ const $delegate = (target, selector, type, handler, capture) => {
 
   $on(target, type, dispatchEvent, !!capture);
 };
-module.exports = {
+export default {
   $qs,
   $on,
   $delegate,

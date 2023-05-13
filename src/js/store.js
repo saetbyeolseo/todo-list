@@ -1,9 +1,9 @@
 const storageKey = 'TODO_LIST';
 const localStorage = window.localStorage;
-const getLocalStorage = () => JSON.parse(localStorage.getItem(storageKey) || '[]');
-const setLocalStorage = (list) => localStorage.setItem(storageKey, JSON.stringify(list));
+const getItem = () => JSON.parse(localStorage.getItem(storageKey) || '[]');
+const setItem = (list) => localStorage.setItem(storageKey, JSON.stringify(list));
 
-module.exports = {
-  getLocalStorage,
-  setLocalStorage,
+export default {
+  getItem,
+  setItem,
 };
