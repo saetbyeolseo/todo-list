@@ -56,6 +56,8 @@ a {
 
 .todo-list {
   &__item {
+    background: #fff;
+    border-left: .5rem solid #fff;
     border-bottom: 1px solid #d1d1d1;
     padding: 1rem;
     display: flex;
@@ -90,6 +92,14 @@ a {
 .selected {
   color: #24c497;
   font-weight: 700;
+}
+
+.dragItem {
+  opacity: 0.3;
+}
+
+.dragOver {
+  border-left: .5rem solid #EACE8A;
 }
 
 @media only screen and (max-width: 600px) {
